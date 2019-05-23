@@ -22,7 +22,36 @@ To get started:
     yarn
     ```
 
-3. Start the development server:
+3. Install the TailwindCSS custom forms plugin:
+
+  ```bash
+  # Using npm
+  npm install @tailwindcss/custom-forms
+
+  # Using Yarn
+  yarn add @tailwindcss/custom-forms
+  ```
+
+4. Add it to your `tailwind.config.js` file:
+
+  ```js
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      require('@tailwindcss/custom-forms')
+    ]
+  }
+  ```
+
+##### Custom Forms Documentation
+
+The project is still early but basic documentation can be found here:
+
+[Read the documentation](https://tailwindcss-custom-forms.netlify.com/)
+
+
+5. Start the development server:
 
     ```bash
     # Using npm
@@ -34,7 +63,7 @@ To get started:
 
     Now you should be able to see the project running at localhost:8080.
 
-4. Open `public/index.html` in your editor and start experimenting!
+6. Open `public/index.html` in your editor and start experimenting!
 
 ## Building for production
 
