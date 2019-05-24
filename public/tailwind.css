@@ -1,3 +1,97 @@
 @tailwind base;
+
+h1 {
+    @apply text-5xl;
+}
+
+h2 {
+    @apply text-4xl;
+}
+
+h3 {
+    @apply text-3xl;
+}
+
+h4 {
+    @apply text-2xl;
+}
+
+h5 {
+    @apply text-xl;
+}
+
 @tailwind components;
+
+/* Alerts */
+.mpp_alert.info {
+    @apply relative px-3 py-3 mb-4 border rounded bg-blue-200;
+}
+
+.mpp_alert.success {
+    @apply relative px-3 py-3 mb-4 border rounded bg-green-200;
+}
+
+.mpp_alert.warning {
+    @apply relative px-3 py-3 mb-4 border rounded bg-yellow-200;
+}
+
+.mpp_alert.error {
+    @apply relative px-3 py-3 mb-4 border rounded bg-red-200;
+}
+
+/* basic form */
+.mpp_formField {
+    @apply block;
+}
+
+.mpp_formControl input[type=checkbox] {
+    @apply form-checkbox text-indigo-600;
+}
+
+/* GridView Table */
+.mpp_gridView {
+    @apply w-full mb-4;
+}
+
+.mpp_gridHeader {
+    @apply bg-gray-300 border-b text-left text-sm font-semibold text-gray-700;
+}
+
+.mpp_gridHeader th, .mpp_gridRow td, .mpp_gridRowAlternate td {
+    @apply p-2;
+}
+
+.mpp_gridRow {
+    @apply border-t border-b border-gray-400;
+}
+
+.mpp_gridRow:hover {
+    @apply bg-gray-100;
+}
+
+.mpp_gridRow td {
+    @apply text-gray-700;
+}
+
+/* infoCard */
+
+.mpp_infoCard {
+    @apply max-w-sm w-full;
+}
+
+.mpp_infoCardImage {
+    @apply h-48 flex-none bg-cover rounded-t text-center overflow-hidden;
+}
+
+@screen lg {
+    .mpp_infoCard {
+        @apply max-w-full flex;
+    }
+    
+    .mpp_infoCardImage {
+        @apply h-auto w-48 rounded-t-none rounded-l;
+    }
+}
+
+
 @tailwind utilities;
