@@ -45,7 +45,7 @@ h5 {
 }
 
 .mpp_formControl input[type=checkbox] {
-    @apply form-checkbox text-indigo-600;
+    @apply text-indigo-600;
 }
 
 /* GridView Table */
@@ -106,5 +106,5 @@ h5 {
     }
 }
 
-
 @tailwind utilities;
+
