@@ -75,21 +75,34 @@ h5 {
 
 /* infoCard */
 
+#divDirectoryContainter, #divDirectoryContainer {
+    @apply flex flex-wrap -mx-1;
+}
+
 .mpp_infoCard {
-    @apply max-w-sm w-full;
+    @apply my-1 px-1 w-full;
 }
 
 .mpp_infoCardImage {
-    @apply h-48 flex-none bg-cover rounded-t text-center overflow-hidden;
+    @apply h-16 w-16 rounded-full flex-none bg-cover text-center overflow-hidden;
 }
 
-@screen lg {
+@screen md {
     .mpp_infoCard {
-        @apply max-w-full flex;
+        @apply w-1/2;
     }
     
     .mpp_infoCardImage {
-        @apply h-auto w-48 rounded-t-none rounded-l;
+        @apply h-24 w-24 rounded-full;
+    }
+}
+
+@screen lg {
+    #divDirectoryContainter, #divDirectoryContainer {
+        @apply -mx-4;
+    }
+    .mpp_infoCard {
+        @apply my-4 px-4 w-1/3;
     }
 }
 
