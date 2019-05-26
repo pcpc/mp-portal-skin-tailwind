@@ -22,6 +22,20 @@ h5 {
 
 @tailwind components;
 
+.mpp_formField {
+    @apply block py-2;
+}
+
+.textboxes {
+    @extend .form-input;
+    @apply mt-1 block w-full max-w-xs;
+}
+
+#TextBox_Multiline, .TextAreas {
+    @extend .form-textarea;
+    @apply mt-1 block w-full max-w-xl;
+}
+
 /* Alerts */
 .mpp_alert.info {
     @apply relative px-3 py-3 mb-4 border rounded bg-blue-200;
@@ -39,14 +53,7 @@ h5 {
     @apply relative px-3 py-3 mb-4 border rounded bg-red-200;
 }
 
-/* basic form */
-.mpp_formField {
-    @apply block;
-}
 
-.mpp_formControl input[type=checkbox] {
-    @apply text-indigo-600;
-}
 
 /* GridView Table */
 .mpp_gridView {
@@ -87,6 +94,27 @@ h5 {
     @apply h-16 w-16 rounded-full flex-none bg-cover text-center overflow-hidden;
 }
 
+/* groupDetail */
+.mpp_page_GroupDetail {
+    
+}
+/* buttons */
+#btnSignUp {
+    @apply font-bold py-2 px-4 rounded bg-blue-500 text-white;
+}
+
+#btnSignUp:hover {
+    @apply bg-blue-700;
+}
+
+.mpp_bottomButtons {
+    @apply py-4;
+}
+
+.mpp_bottomButtons .mpp_navLink {
+    @apply mr-4 font-bold py-2 px-4 rounded bg-blue-500 text-white;
+}
+
 @screen md {
     .mpp_infoCard {
         @apply w-1/2;
@@ -108,3 +136,12 @@ h5 {
 
 @tailwind utilities;
 
+/* basic form */
+/* .mpp_formField {
+    @apply block;
+}
+
+.mpp_formControl input[type=checkbox] {
+    @extend .form-checkbox;
+    @apply text-pink-600;
+} */
