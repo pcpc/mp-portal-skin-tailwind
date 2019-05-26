@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
+    require('postcss-extend'),
     ...process.env.NODE_ENV === 'production'
       ? [purgecss, require('cssnano')]
       : []
