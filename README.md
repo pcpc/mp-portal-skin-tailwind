@@ -2,7 +2,7 @@
 
 A simple starter project for playing around with Tailwind in a proper PostCSS environment.
 
-To get started:
+### To get started:
 
 1. Clone the repository:
 
