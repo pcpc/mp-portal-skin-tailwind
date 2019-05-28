@@ -87,11 +87,15 @@ h5 {
 }
 
 .mpp_infoCard {
-    @apply my-1 py-2 w-full bg-white;
+    @apply w-full;
 }
 
 .mpp_infoCardImage {
     @apply h-16 w-16 rounded-full flex-none bg-cover text-center overflow-hidden;
+}
+
+.mpp_infoCardData {
+    @apply p-4 bg-white;
 }
 
 /* groupDetail */
@@ -121,7 +125,7 @@ h5 {
     }
     
     .mpp_infoCardImage {
-        @apply h-24 w-24 rounded-full;
+        @apply h-16 w-16 rounded-full;
     }
 }
 
